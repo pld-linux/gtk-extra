@@ -1,4 +1,3 @@
-%define	_prefix	/usr/X11R6
 Summary:	A useful widget set complementary to GTK+
 Summary(pl):	Zbiór u¿ytecznych widgetów uzupe³niaj±cy GTK+
 Name:		gtk+extra
