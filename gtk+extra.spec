@@ -1,4 +1,4 @@
-%define _prefix /usr/X11R6
+%define	_prefix	/usr/X11R6
 Summary:	A useful widget set complementary to Gtk+
 Summary(pl):	Zbiór u¿ytecznych widgetów uzupe³niaj±cy Gtk+
 Name:		gtk+extra
@@ -15,38 +15,38 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GTK+extra is a useful widget set complementary to Gtk+ for creating
+gtk+extra is a useful widget set complementary to GTK+ for creating
 graphical interfaces for the X11 Window System. It is written in C and
-requires Gtk+ version 1.2.x.
+requires GTK+ version 1.2.x.
 
 %description -l pl
-GTK+extra jest zbiorem po¿ytecznych widgetów uzupe³niaj±cych Gtk+,
+gtk+extra jest zbiorem po¿ytecznych widgetów uzupe³niaj±cych GTK+,
 s³u¿±cych do tworzenia graficznych interfejsów w systemie X11 Window.
-Zosta³ napisany w C i wymaga biblioteki Gtk+ w wersji 1.2.x.
+Zosta³ napisany w C i wymaga biblioteki GTK+ w wersji 1.2.x.
 
 %package devel
-Summary:	Header files and some docs for GTK+extra library.
-Summary(pl):	Pliki nag³ówkowe i nieco dokumentacji dla biblioteki GTK+extra.
+Summary:	Header files and some docs for gtk+extra library.
+Summary(pl):	Pliki nag³ówkowe i nieco dokumentacji dla biblioteki gtk+extra.
 Group:		X11/Development/Libraries
 Requires:	gtk+extra = %{version}
 
 %description devel
-Header files and some docs for GTK+extra library.
+Header files and some docs for gtk+extra library.
 
 %description devel -l pl
-Pliki nag³ówkowe i nieco dokumentacji dla biblioteki GTK+extra.
+Pliki nag³ówkowe i nieco dokumentacji dla biblioteki gtk+extra.
 
 %package static
-Summary:	Static GTK+extra libraries.
-Summary(pl):	Biblioteki statyczne GTK+extra.
+Summary:	Static gtk+extra libraries.
+Summary(pl):	Biblioteki statyczne gtk+extra.
 Group:		X11/Development/Libraries
 Requires:	gtk+extra-devel = %{version}
 
 %description static
-Static GTK+extra libraries.
+Static gtk+extra libraries.
 
 %description static -l pl
-Biblioteki statyczne GTK+extra.
+Biblioteki statyczne gtk+extra.
 
 %prep
 %setup -q
