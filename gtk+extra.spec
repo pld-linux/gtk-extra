@@ -1,12 +1,12 @@
 %define	_prefix	/usr/X11R6
-Summary:	A useful widget set complementary to Gtk+
-Summary(pl):	Zbiór u¿ytecznych widgetów uzupe³niaj±cy Gtk+
+Summary:	A useful widget set complementary to GTK+
+Summary(pl):	Zbiór u¿ytecznych widgetów uzupe³niaj±cy GTK+
 Name:		gtk+extra
 Version:	0.99.17
 Release:	0.1
 License:	LGPL
 Group:		X11/Libraries
-Source0:	http://gtkextra.sourceforge.net/src/%{name}/%{name}-%version.tar.gz
+Source0:	http://gtkextra.sourceforge.net/src/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	390e622c12a5c7f7845ee144ae13ab93
 Patch0:		%{name}-ac_am.patch
 URL:		http://gtkextra.sourceforge.net
