@@ -1,0 +1,35 @@
+diff -urN gtk+extra-0.99.17/configure.in gtk+extra-0.99.17.patch/configure.in
+--- gtk+extra-0.99.17/configure.in	2001-11-30 16:12:14.000000000 +0100
++++ gtk+extra-0.99.17.patch/configure.in	2004-09-25 22:40:05.288966680 +0200
+@@ -4,7 +4,7 @@
+ # Save this value here, since automake will set cflags later
+ cflags_set=${CFLAGS+set}
+ 
+-AC_DIVERT_PUSH(AC_DIVERSION_NOTICE)dnl
++AC_DIVERT_PUSH(1)dnl
+ # Making releases:
+ #   GTK_EXTRA_MICRO_VERSION += 1;
+ #   GTK_EXTRA_INTERFACE_AGE += 1;
+diff -urN gtk+extra-0.99.17/docs/Makefile.am gtk+extra-0.99.17.patch/docs/Makefile.am
+--- gtk+extra-0.99.17/docs/Makefile.am	2001-11-30 16:12:11.000000000 +0100
++++ gtk+extra-0.99.17.patch/docs/Makefile.am	2004-09-25 23:03:04.434304720 +0200
+@@ -1,4 +1,4 @@
+-EXTRA_DIST += \
++EXTRA_DIST = \
+ 	gtksheet-9.0.ChangeLog \
+ 	gtkplot-5.0.ChangeLog \
+ 	gtkiconlist-2.0.ChangeLog 
+diff -urN gtk+extra-0.99.17/gtkextra/Makefile.am gtk+extra-0.99.17.patch/gtkextra/Makefile.am
+--- gtk+extra-0.99.17/gtkextra/Makefile.am	2001-11-30 16:23:46.000000000 +0100
++++ gtk+extra-0.99.17.patch/gtkextra/Makefile.am	2004-09-25 23:05:42.361296168 +0200
+@@ -89,8 +89,8 @@
+ 	-release $(LT_RELEASE) \
+ 	-export-dynamic \
+ 	$(shell gtk-config --libs) $(GTKGL_LIBS)
+-EXTRA_HEADERS +=
+-EXTRA_DIST += $(gtkextra_private_h_sources) gtkextra.def Makefile.win32 makefile.msc sat.xpm sg_small.xpm cloud.xpm suncloud.xpm testgtkplotdt.in
++EXTRA_HEADERS =
++EXTRA_DIST = $(gtkextra_private_h_sources) gtkextra.def Makefile.win32 makefile.msc sat.xpm sg_small.xpm cloud.xpm suncloud.xpm testgtkplotdt.in
+ 
+ # test programs, not to be installed
+ 
