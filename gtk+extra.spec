@@ -3,7 +3,7 @@ Summary:	A useful widget set complementary to GTK+
 Summary(pl):	Zbiór u¿ytecznych widgetów uzupe³niaj±cy GTK+
 Name:		gtk+extra
 Version:	0.99.17
-Release:	1
+Release:	0.9
 License:	LGPL
 Group:		X11/Libraries
 Source0:	http://gtkextra.sourceforge.net/src/%{name}-%{version}.tar.gz
