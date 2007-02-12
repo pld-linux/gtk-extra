@@ -1,5 +1,5 @@
 Summary:	A useful widget set complementary to GTK+
-Summary(pl):	ZbiÛr uøytecznych widgetÛw uzupe≥niaj±cy GTK+
+Summary(pl.UTF-8):   Zbi√≥r u≈ºytecznych widget√≥w uzupe≈ÇniajƒÖcy GTK+
 Name:		gtk+extra
 Version:	0.99.17
 Release:	1
@@ -19,33 +19,33 @@ gtk+extra is a useful widget set complementary to GTK+ for creating
 graphical interfaces for the X11 Window System. It is written in C and
 requires GTK+ version 1.2.x.
 
-%description -l pl
-gtk+extra jest zbiorem poøytecznych widgetÛw uzupe≥niaj±cych GTK+,
-s≥uø±cych do tworzenia graficznych interfejsÛw w systemie X11 Window.
-Zosta≥ napisany w C i wymaga biblioteki GTK+ w wersji 1.2.x.
+%description -l pl.UTF-8
+gtk+extra jest zbiorem po≈ºytecznych widget√≥w uzupe≈ÇniajƒÖcych GTK+,
+s≈Çu≈ºƒÖcych do tworzenia graficznych interfejs√≥w w systemie X11 Window.
+Zosta≈Ç napisany w C i wymaga biblioteki GTK+ w wersji 1.2.x.
 
 %package devel
 Summary:	Header files and some docs for gtk+extra library
-Summary(pl):	Pliki nag≥Ûwkowe i nieco dokumentacji dla biblioteki gtk+extra
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe i nieco dokumentacji dla biblioteki gtk+extra
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and some docs for gtk+extra library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe i nieco dokumentacji dla biblioteki gtk+extra.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe i nieco dokumentacji dla biblioteki gtk+extra.
 
 %package static
 Summary:	Static gtk+extra libraries
-Summary(pl):	Biblioteki statyczne gtk+extra
+Summary(pl.UTF-8):   Biblioteki statyczne gtk+extra
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static gtk+extra libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne gtk+extra.
 
 %prep
