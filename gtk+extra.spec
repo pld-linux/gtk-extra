@@ -1,5 +1,5 @@
 Summary:	A useful widget set complementary to GTK+
-Summary(pl.UTF-8):   Zbiór użytecznych widgetów uzupełniający GTK+
+Summary(pl.UTF-8):	Zbiór użytecznych widgetów uzupełniający GTK+
 Name:		gtk+extra
 Version:	0.99.17
 Release:	1
@@ -26,7 +26,7 @@ Został napisany w C i wymaga biblioteki GTK+ w wersji 1.2.x.
 
 %package devel
 Summary:	Header files and some docs for gtk+extra library
-Summary(pl.UTF-8):   Pliki nagłówkowe i nieco dokumentacji dla biblioteki gtk+extra
+Summary(pl.UTF-8):	Pliki nagłówkowe i nieco dokumentacji dla biblioteki gtk+extra
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -38,7 +38,7 @@ Pliki nagłówkowe i nieco dokumentacji dla biblioteki gtk+extra.
 
 %package static
 Summary:	Static gtk+extra libraries
-Summary(pl.UTF-8):   Biblioteki statyczne gtk+extra
+Summary(pl.UTF-8):	Biblioteki statyczne gtk+extra
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
