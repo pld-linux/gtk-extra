@@ -1,28 +1,25 @@
 Summary:	A useful widget set complementary to GTK+
 Summary(pl.UTF-8):	Zbiór użytecznych widgetów uzupełniający GTK+
 Name:		gtk+extra
-Version:	0.99.17
-Release:	1
+Version:	2.1.1
+Release:	0.9
 License:	LGPL
 Group:		X11/Libraries
-Source0:	http://gtkextra.sourceforge.net/src/%{name}-%{version}.tar.gz
-# Source0-md5:	390e622c12a5c7f7845ee144ae13ab93
-Patch0:		%{name}-ac_am.patch
+Source0:	http://dl.sourceforge.net/scigraphica/%{name}-%{version}.tar.gz
+# Source0-md5:	1a933ca1286829383a0554cc2deb9e04
 URL:		http://gtkextra.sourceforge.net/
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	gtk+-devel >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 gtk+extra is a useful widget set complementary to GTK+ for creating
 graphical interfaces for the X11 Window System. It is written in C and
-requires GTK+ version 1.2.x.
+requires GTK+ version 2.0.x.
 
 %description -l pl.UTF-8
 gtk+extra jest zbiorem pożytecznych widgetów uzupełniających GTK+,
 służących do tworzenia graficznych interfejsów w systemie X11 Window.
-Został napisany w C i wymaga biblioteki GTK+ w wersji 1.2.x.
+Został napisany w C i wymaga biblioteki GTK+ w wersji 2.0.x.
 
 %package devel
 Summary:	Header files and some docs for gtk+extra library
@@ -50,20 +47,16 @@ Biblioteki statyczne gtk+extra.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
-%{__aclocal}
-%{__autoconf}
-%{__automake}
 %configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	m4datadir=%{_aclocaldir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -74,15 +67,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README AUTHORS NEWS TODO docs/gtk*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libgtkextra-x11*.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/gtkextra
-%{_aclocaldir}/*
+%attr(755,root,root) %{_libdir}/libgtkextra-x11*.so
+%{_libdir}/libgtkextra-x11*.la
+%{_includedir}/gtkextra*
+%{_pkgconfigdir}/*.pc
 
 %files static
 %defattr(644,root,root,755)
